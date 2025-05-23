@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ຟອມຈອງລົດຕູ້ - Sabaidee Van Tours</title>
+  <style>
+    body {
+    background: url('image/poster.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #07096b;
+}
+    }
+    form {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #ffffffdd;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 162, 255, 0.2);
+      transition: box-shadow 0.3s ease;
+    }
+    form:hover {
+      box-shadow: 0 8px 30px rgba(0, 85, 127, 0.35);
+    }
+    form img {
+      width: 160px;
+      display: block;
+      margin: 0 auto 25px auto;
+      filter: drop-shadow(0 0 3px rgba(4, 163, 255, 0.5));
+      transition: transform 0.3s ease;
+    }
+    form img:hover {
+      transform: scale(1.05);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #00557f;
+      font-weight: 700;
+      text-shadow: 1px 1px 2px rgba(0, 85, 127, 0.3);
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+      color: #004a80;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1.5px solid #66a3ff;
+      border-radius: 6px;
+      margin-bottom: 18px;
+      font-size: 1rem;
+      color: #003d66;
+      background-color: #f0faff;
+      box-shadow: inset 0 1px 3px rgba(102, 163, 255, 0.3);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="tel"]:focus,
+    input[type="email"]:focus,
+    input[type="date"]:focus,
+    input[type="time"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #004a80;
+      box-shadow: 0 0 8px rgba(0, 85, 127, 0.7);
+      outline: none;
+      background-color: #e6f2ff;
+    }
+    button[type="submit"] {
+      background-color: #007acc;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 122, 204, 0.6);
+    }
+    button[type="submit"]:hover {
+      background-color: #08458b;
+      box-shadow: 0 6px 15px rgba(0, 95, 153, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+<form action="https://formspree.io/f/xanozlor" method="POST" style="max-width: 600px; margin: auto; font-family: sans-serif; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background: #f0f8ff;">
+  <img src="D:\webside\html\image\sabaidee.png" alt="Sabaidee Van Tours Logo" />
+
+
+  <h2>ຟອມຈອງລົດຕູ້ / แบบฟอร์มจองรถตู้ / Van Booking Form / 订车表格</h2>
+
+  <label>👤 ຊື່ / ชื่อ / Name / 姓名:</label>
+  <input type="text" name="name" required />
+
+  <label>📞 ເບີໂທ / เบอร์โทร / Phone / 电话:</label>
+  <input type="tel" name="phone" required />
+
+  <label>📧 ອີເມວ / อีเมล / Email / 电子邮件:</label>
+  <input type="email" name="email" />
+  <label>👥 ຈຳນວນຄົນ / จำนวนคน / Number of Passengers / 人数:</label>
+<input type="number" name="passengers" min="1" max="20" required />
+
+  <label>📍 ສະຖານທີ່ຮັບ / จุดรับ / Pickup Location / 上车地点:</label>
+  <input type="text" name="pickup_location" required />
+
+  <label>📍 ສະຖານທີ່ສົ່ງ / จุดส่ง / Drop-off Location / 下车地点:</label>
+  <input type="text" name="dropoff_location" required />
+
+  <label>📅 ວັນທີ່ໃຊ້ບໍລິການ / วันที่เดินทาง / Date of Service / 出发日期:</label>
+  <input type="date" name="date" required />
+
+  <label>🕘 ເວລາເລີ່ມ / เวลาออกเดินทาง / Start Time / 出发时间:</label>
+  <input type="time" name="time" />
+
+  <label>🚐 ບໍລິການ / บริการ / Service / 服务:</label>
+  <select name="service" required>
+    <option value="">-- ເລືອກ / เลือก / Select / 选择 --</option>
+    <option value="train-station">ສະຖານີລົດໄຟ ➜ ໃນເມືອງ ➜ ສະຖານີລົດໄຟ  (55,000 ກີບ/ຄົນ) / 火车站 ➜ 市区 (55,000 基普/人)</option>
+    <option value="airport">ສະໜາມບິນ ➜ ໃນເມືອງ  ➜ ສະໜາມບິນ  (200,000 ກີບ) / 机场 ➜ 市区 (200,000 基普)</option>
+    <option value="full-day">ທົວ1 ມື້ (1,300,000ກີບ ➜ 1,500,000ກີບ ) / 一日包车 (1,300,000  ➜ 1,500,000 基普)</option>
+    <option value="kuang-si">ໂຮງແຮມ ➜ ຕາດກວາງຊີ ➜ ໂຮງແຮມ (800,000 ກີບ) / 酒店 ➜ 瀑布 (800,000 基普)</option>
+    <option value="kuang-si-city"> ໂຮງແຮມ ➜ ຕາດກວາງຊີ ➜ ທ່ຽວໃນເມືອງ ➜ ໂຮງແຮມ (1,000,000 ກີບ) / 瀑布 ➜ 返回市区 (1,000,000 基普)</option>
+  </select>
+
+  <label>📝 ຄຳເຫັນເພີ່ມເຕີມ / ข้อความเพิ่มเติม / Additional Notes / 备注:</label>
+  <textarea name="notes" rows="4" placeholder="ລາຍລະອຽດເພີ່ມເຕີມ... / 请填写详细信息..."></textarea>
+
+  <button type="submit">📨 ຈອງເລີຍ / จองเลย / Book Now / 立即预订</button>
+</form>
+
+</body>
+</html>
